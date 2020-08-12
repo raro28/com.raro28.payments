@@ -6,4 +6,4 @@ target
 .vscode/
 bin/
 .mvn
-.env
+*.env

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="opForm"></form>
+
+    <script type="text/javascript" src="https://resources.openpay.mx/lib/openpay-js/1.2.38/openpay.v1.js"></script>
+    <script type="text/javascript" src="https://resources.openpay.mx/lib/openpay-data-js/1.2.38/openpay-data.v1.js"></script>
+
+    <script>
+        OpenPay.setId('merchant-id');
+        OpenPay.setApiKey('public-key');
+        OpenPay.setSandboxMode(true);
+        var deviceDataId = OpenPay.deviceData.setup("opForm");
+        alert(deviceDataId);
+    </script>
+</body>
+</html>
