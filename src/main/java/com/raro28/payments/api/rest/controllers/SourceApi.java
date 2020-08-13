@@ -17,6 +17,6 @@ public interface SourceApi {
     @DeleteMapping("/{id}")
     ResponseEntity<Void> remove(@PathVariable String id, @RequestParam String customerId);
 
-    @PostMapping("/{id}")
+    @PostMapping("/{id}/charges")
     ResponseEntity<CreatedResourceResponse> capture(@PathVariable String id, @RequestParam String customerId, @RequestBody Charge charge, @RequestHeader(required = false) String verifier);
 }
