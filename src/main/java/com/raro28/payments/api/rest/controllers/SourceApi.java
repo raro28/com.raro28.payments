@@ -1,6 +1,6 @@
 package com.raro28.payments.api.rest.controllers;
 
-import com.raro28.payments.api.rest.models.Charge;
+import com.raro28.payments.api.models.Charge;
 import com.raro28.payments.api.rest.models.CreatedResourceResponse;
 
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.raro28.payments.api.rest.models;
+package com.raro28.payments.api.models;
 
 import lombok.Data;
 

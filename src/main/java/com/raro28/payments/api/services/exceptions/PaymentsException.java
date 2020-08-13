@@ -1,4 +1,4 @@
-package com.raro28.payments.api.rest.exceptions;
+package com.raro28.payments.api.services.exceptions;
 
 public class PaymentsException extends RuntimeException{
 

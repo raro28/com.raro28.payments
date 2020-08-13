@@ -1,8 +1,8 @@
 package com.raro28.payments.api.rest.controllers;
 
+import com.raro28.payments.api.models.Customer;
+import com.raro28.payments.api.models.Source;
 import com.raro28.payments.api.rest.models.CreatedResourceResponse;
-import com.raro28.payments.api.rest.models.Customer;
-import com.raro28.payments.api.rest.models.Source;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
