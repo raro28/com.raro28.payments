@@ -3,6 +3,7 @@ package com.raro28.payments.api.rest.controllers;
 import com.raro28.payments.api.models.Charge;
 import com.raro28.payments.api.rest.models.CreatedResourceResponse;
 
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,6 @@ public interface SourceApi {
     @DeleteMapping("/{id}")
     ResponseEntity<Void> remove(@PathVariable String id, @RequestParam String customerId);
 
-    @PostMapping("/{id}/charges")
+    @PostMapping(value = "/{id}/charges", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     ResponseEntity<CreatedResourceResponse> capture(@PathVariable String id, @RequestParam String customerId, @RequestBody Charge charge, @RequestHeader(required = false) String verifier);
 }
