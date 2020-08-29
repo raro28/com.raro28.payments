@@ -25,7 +25,7 @@ public class CustomerServiceImpl implements CustomerService {
                 .name(customer.getName())
                 .lastName(customer.getLastName())
                 .email(customer.getEmail())
-                .requiresAccount(false));
+                .requiresAccount(true));
 
             return result.getId();
         } catch (Exception e) {
